@@ -1,0 +1,48 @@
+:root {
+    --color-primario: #2A2D34;
+    --color-secundario: #F18F01;
+    --color-texto: #E8EBE4;
+    --degradado-hero: linear-gradient(45deg, #2A2D34 0%, #5C6784 100%);
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: rgba(42, 45, 52, 0.95);
+}
+
+.hero {
+    background: var(--degradado-hero);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.grid-poemas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.articulo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.btn-leer {
+    background: var(--color-secundario);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
