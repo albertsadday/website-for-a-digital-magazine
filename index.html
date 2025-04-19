@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poesía Transdisciplinar | Josué Mirlo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/efectos.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navegacion">
+        <h1 class="logo">Josué Mirlo</h1>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#poemas">Poemas</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#bio">Biografía</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Hero -->
+    <header id="inicio" class="hero">
+        <div class="hero-texto">
+            <h2 class="fadeIn">Explora la poética de Josué Mirlo</h2>
+            <p class="slideUp">Tradición y transgresión en versos modernos</p>
+        </div>
+    </header>
+
+    <!-- Sección Poemas -->
+    <section id="poemas" class="seccion-poemas">
+        <h3>Selección Poética</h3>
+        <div class="grid-poemas" id="contenedor-poemas"></div>
+    </section>
+
+    <!-- Sección Artículos -->
+    <section id="articulos" class="seccion-articulos">
+        <h3>Estudios Críticos</h3>
+        <div class="grid-articulos">
+            <article class="articulo">
+                <h4>La poética del esperpento</h4>
+                <p>Análisis de Carmen Álvarez Lobato sobre la deformación estética...</p>
+                <button class="btn-leer">Leer más</button>
+            </article>
+            <!-- Más artículos -->
+        </div>
+    </section>
+
+    <!-- Biografía -->
+    <section id="bio" class="biografia">
+        <img src="imagenes/retrato-mirlo.jpg" alt="Josué Mirlo" class="flotar">
+        <div class="bio-texto">
+            <h3>Genaro Robles Barrera (1901-1968)</h3>
+            <p>Poeta mexiquense, miembro del estridentismo...</p>
+        </div>
+    </section>
+
+    <!-- Modal para poemas -->
+    <div class="modal" id="modal-poema">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2 id="titulo-poema"></h2>
+            <pre id="texto-poema"></pre>
+        </div>
+    </div>
+
+    <script src="js/poemas.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
